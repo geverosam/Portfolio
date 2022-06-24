@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root{
+	--pink: #FFC0CB;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0; padding: 0;
+	box-sizing:  border-box;
+	text-decoration: none;
+	outline: none; border: none;
+	transition: all .2s linear;
+}
+
+*::selection{
+	background:var(--pink);
+	color: #FFFFFF;
+}
+
+header{
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 1000;
+	height: 100%;
+	width: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	text-align: center;
+	margin-left: 40px;
+}
+
+header .me .name{
+	font-size: 40px;
+	color:#C0BD88;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+header .me .bottom{
+	font-size: 18px;
+	color:#D1B9DC;
+}
+
+header .navigationbar{
+	width: 100%
+}
+
+header .navigationbar ul{
+	list-style: none;
+	padding: 5px 20px;
+}
+
+header .navigationbar ul li a{
+	display: block;
+	padding: 10px;
+	margin: 24px 0;
+	background: #EBDDA7;
+	color: #805745;
+	font-size: 18px;
+	border-radius: 50px;
+}
+
+header .navigationbar ul li a:hover{
+	background: var(--pink);
+}
+
+.main-content{
+	margin-left: 448px;
+    margin-top: 245px;
+    width:  350px;
+    font-size: 30px;
+    color: #C0BD88;
+}
+
+.sub-content{
+	margin-left: 450px;
+    margin-top: 10px;
+    width:  350px;
+    font-size: 15px;
+    color: #805745;
+}
+
+header .under ul li a{
+	display: block;
+	padding: 10px;
+	margin-top: -110px;
+	background: #EBDDA7;
+	color: #805745;
+	font-size: 18px;
+	border-radius: 50px;
+	text-decoration: none;
+	margin-left: 540px;
+	width: 40%;
+}
+
+header .under ul li a:hover{
+	background: var(--pink);
+}
+
+header .under ul{
+	list-style: none;
+	padding: 5px 20px;
+}
+
+header .about-me .name{
+	font-size: 55px;
+	color:#C0BD88;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+header .about-me .bottom{
+	font-size: 18px;
+	color:#D1B9DC;
+}
+
+.about-heading{
+	margin-left: 578px;
+  margin-top: 45px;
+  font-size: 40px;
+  color: #C0BD88;
+}
+
+.about-content{
+	margin-left: 460px;
+  margin-top: 20px;
+  width:  350px;
+  font-size: 18px;
+  color: #805745;
+  float: left;
+}
+
+.beside-content{
+	margin-left: 720px;
+  margin-top: 20px;
+  width:  350px;
+  font-size: 18px;
+  color: #805745;
+}
+
+.upperside-content{
+	margin-left: 460px;
+  margin-top: 35px;
+  width: 780px;
+  font-size: 20px;
+  color: #805745;
+  text-align: justify;
+}
+
+.side-content{
+	margin-left: 460px;
+  margin-top: 16px;
+  width: 780px;
+  font-size: 16px;
+  color: #805745;
+  text-align: justify;
+}
+
+.skills-ed{
+	margin-left: 460px;
+  	margin-top: 50px;
+ 	font-size: 35px;
+  	color: #C0BD88;
+}
+
+.skills-ed-label{
+	margin-left: 160px;
+}
+
+.skills-header{
+	font-size: 18px;
+	color: #805745;
+	margin-top: 20px;
+}
+
+/*background*/
+progress::-webkit-progress-bar {
+	background-color: #ddd; width: 100%;
+	border-radius: 20px;
+}
+progress {
+	background-color: #ddd;
+	border-radius: 20px;
+}
+
+/*value*/
+progress::-webkit-progress-value {
+	background-color: #D1B9DC !important;
+	border-radius: 20px;
+}
+progress::-moz-progress-bar {
+	background-color: #D1B9DC !important;
+	border-radius: 20px;
+}
+progress {
+	color: #D1B9DC;
+}
+
+.skillsbar{
+	width: 30%;
+	height: 25px;
+}
+
+.ed-container{
+	margin-left: 815px;
+	margin-top: -470px;
+	margin-bottom: 45px;
+}
+
+.timeline-title{
+	font-size: 20px;
+	font-weight: medium;
+	margin-bottom: 10px;
+	color: #D1B9DC;
+	width: 330px;
+}
+
+.timeline-object{
+	position: relative;
+	margin-bottom: 30px;
+	padding-left: 3rem;
+}
+
+.timeline-object:last-child{
+	margin-bottom: 0;
+}
+
+.timeline-object::before{
+	content: '';
+	width: 1px;
+	position: absolute;
+	left: .48rem;
+	top: 0;
+	height: 100%;
+	background-color: var(--pink);
+}
+
+.circle-shape{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1rem;
+	width: 1rem;
+	border: 2px solid var(--pink);
+	border-radius: 50%;
+	background-color: var(--pink);
+	transition: .3s;
+}
+
+.timeline-object:hover .circle-shape{
+	background-color: #FFFFFF;
+}
+
+.timeline-text{
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #805745;
+	width: 375px;
+}
+
+.timeline-date{
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	color: #C0BD88;
+}
+
+.port-heading{
+	margin-left: 590px;
+  	margin-top: 45px;
+  	font-size: 50px;
+  	color: #C0BD88;
+}
+
+.image{
+	margin-left: 305px;
+}
+
+.card-img-top{
+	margin-top: 25px;
+}
+
+.content{
+	margin-left: 830px;
+	margin-bottom: 30px;
+}
+
+.port-head{
+	font-weight: bold;
+	color: #C0BD88;
+}
+
+.details{
+	color: #805745;
+}
+
+.li-font{
+	font-size: 14px;
+	list-style: none;
+}
+
+.activity-block{
+	display:  none;
+}
+
+.cont-heading{
+	margin-left: 670px;
+  	margin-top: 45px;
+  	font-size: 50px;
+  	color: #C0BD88;
+}
+
+.contact-container{
+	grid-template-columns: 300px 340px;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	margin-left: 550px;
+	margin-top: 20px;
+}
+
+.contact-form{
+	margin-left: 310px;
+	margin-top: -428px;
+}
+
+.content-info{
+	display: grid;
+	row-gap: 1rem;
+}
+
+.contact-card{
+	background-color: #EBDDA7;
+	padding: 1rem;
+	border-radius: .5rem;
+	text-align: center;
+	width: 255px;
+	color: #805745;
+}
+
+.contact-content{
+	margin-left: -120px;
+	margin-top: 50px;
+}
+
+.contact-card-data{
+	font-size: 14px;
+}
+
+.contact-card-title{
+	font-weight: medium;
+	font-size: 16px;
+}
+
+.contact-card-data{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input-container {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.input {
+	width: 95%;
+	border: 2px solid #C0BD88;
+	background-color: transparent;
+	padding: .6rem 1.2rem;
+	color: #805745;
+	font-weight: medium;
+	font-size: 16px;
+	letter-spacing: .5px;
+	outline: none;
+	border-radius: .50rem;
+	transition: .3s;
+}
+
+.input-container label {
+	color: #805745;
+	font-size: 1rem;
+	font-weight: medium;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-contact{
+	background-color: #805745;
+}
+
